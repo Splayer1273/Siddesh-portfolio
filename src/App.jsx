@@ -11,8 +11,8 @@ function App() {
     e.preventDefault()
 
     emailjs.sendForm(
-      "service_bkjsn3c",
-      "template_o80x2zc",
+      "service_e59na5o",
+      "template_l0jhpiv",
       form.current,
       "0WJfhDhxf39xymmrG"
     )

@@ -11,11 +11,11 @@ function App() {
     e.preventDefault()
 
     emailjs.sendForm(
-      "service_e59na5o",
-      "template_l0jhpiv",
-      form.current,
-      "0WJfhDhxf39xymmrG"
-    )
+  import.meta.env.VITE_EMAIL_SERVICE_ID,
+  import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+  form.current,
+  import.meta.env.VITE_EMAIL_PUBLIC_KEY
+)
     .then(() => {
       alert("Message Sent Successfully 🚀")
     })
